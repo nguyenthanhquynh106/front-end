@@ -20,3 +20,7 @@ td {
 .table2 td {
     padding: 10px;
 }
+.submit {
+    margin-top: 10px;
+    text-align: center;
+}

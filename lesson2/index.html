@@ -58,7 +58,7 @@
             </div>
 
             <div class="form">
-                <h1>Đăng ký thành viên</h1>
+                <h1>Đăng ký thành viên </h1>
                 <form action="">
                     <table class="table2">
                         <tr>
@@ -70,7 +70,7 @@
                                 <label for="name">Họ tên: </label>
                             </td>
                             <td>
-                                <input type="text" name="name" id="name">
+                                <input type="text" name="name" id="name" placeholder="Nhập họ tên" required>
                             </td>
                         </tr>
                         <tr>
@@ -94,7 +94,7 @@
                                 <label for="avatar">Avatar: </label>
                             </td>
                             <td>
-                                <input type="file" name="avatar" id="avatar">
+                                <input type="file" name="avatar" id="avatar" accept=".png">
                             </td>
                         </tr>
                         <tr>
@@ -102,7 +102,7 @@
                                 <label for="number_phone">Số điện thoại: </label>
                             </td>
                             <td>
-                                <input type="tel" name="number_phone" id="number_phone">
+                                <input type="tel" name="number_phone" id="number_phone" maxlength="11" minlength="10">
                             </td>
                         </tr>
                         <tr>
@@ -122,11 +122,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="gender">Giới tính: </label>
+                                <label for="female">Giới tính: </label>
                             </td>
                             <td>
-                                <input type="radio" name="gioitinh" id=""> Nam<br>
-                                <input type="radio" name="gioitinh" id="" checked> Nữ
+                                <input type="radio" name="gender" id="male"> Nam<br>
+                                <input type="radio" name="gender" id="female" checked> Nữ
                             </td>
                         </tr>
                         <tr>
@@ -148,7 +148,9 @@
                             </td>
                         </tr>
                     </table>
-                    <input type="submit" value="Đăng ký">
+                    <div class="submit">
+                        <input type="submit" value="Đăng ký">
+                    </div>
                 </form>
             </div>
         </div>
